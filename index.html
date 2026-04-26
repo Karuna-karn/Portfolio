@@ -1,84 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karuna Karn | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karuna Karn Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- 🔹 Navigation -->
-<header>
-    <nav>
-        <h2 class="logo">Karuna Karn</h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<div id="progress"></div>
 
-<!-- 🔹 HOME SECTION -->
+<!-- NAVBAR -->
+<nav>
+  <h2>Karuna Karn</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
 <section id="home" class="hero">
-    <h1>Hello, I’m <span>Karuna Karn</span></h1>
-    <p>A passionate web developer who loves creating clean and beautiful websites.</p>
-    <a class="btn" href="#projects">View My Work</a>
+  <h1>Hello, I'm <span id="typing"></span></h1>
+  <p>BCA Final Year Student | Frontend Developer</p>
+  <button onclick="scrollToProjects()" class="btn">View My Work</button>
 </section>
 
-<!-- 🔹 ABOUT SECTION -->
-<section id="about" class="about">
-    <h1>About Me</h1>
-    <p>
-        I'm Karuna Karn, an aspiring web developer who enjoys transforming ideas into interactive and visually appealing digital experiences.  
-        Currently pursuing a Bachelor of Computer Applications (BCA) from RK College under Lalit Narayan Mithila University (LNMU).  
-        I always aim to learn, grow, and improve my development skills every day.
-    </p>
-
-    <h2>Skills</h2>
-    <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Responsive Web Design</li>
-        <li>UI/UX Basics</li>
-    </ul>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am Karuna Karn, a BCA final year (6th semester) student from LNMU 
+    with an overall CGPA of 8. I am passionate about web development 
+    and have built multiple projects using HTML, CSS, and JavaScript.  
+    Currently, I am learning backend technologies like Node.js and Express 
+    to become a full-stack developer.
+  </p>
 </section>
 
-<!-- 🔹 PROJECTS SECTION -->
-<section id="projects" class="projects">
-    <h1>My Projects</h1>
-
-    <div class="project-card">
-        <h2>Portfolio Website</h2>
-        <p>A clean and responsive personal portfolio created using HTML, CSS and JS.</p>
-    </div>
-
-    <div class="project-card">
-        <h2>Facebook Clone UI</h2>
-        <p>A front-end UI clone of Facebook with responsive layout.</p>
-    </div>
-
-    <div class="project-card">
-        <h2>Zomato Clone</h2>
-        <p>A stylish landing page inspired by Zomato’s homepage.</p>
-    </div>
-
-    <div class="project-card">
-        <h2>CGPA Calculator</h2>
-        <p>A simple web calculator to compute CGPA using JavaScript logic.</p>
-    </div>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>SQL</div>
+    <div>Git & GitHub</div>
+    <div>Figma</div>
+    <div>Node.js (Learning)</div>
+    <div>Express (Learning)</div>
+  </div>
 </section>
 
-<!-- 🔹 CONTACT SECTION -->
-<section id="contact" class="contact">
-    <h1>Contact Me</h1>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>My Projects</h2>
 
-    <p><strong>Mobile:</strong> 7488169503</p>
-    <p><strong>Email:</strong> karnkaruna28@gmail.com</p>
+  <div class="projects">
+
+    <div class="card"><h3>Focus Timer</h3><p>Study timer app</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+    <div class="card"><h3>Password Generator</h3><p>Generate passwords</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+    <div class="card"><h3>Notes App</h3><p>Save notes</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+    <div class="card"><h3>Color Picker</h3><p>Pick colors</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+    <div class="card"><h3>E-commerce</h3><p>Shopping UI</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+    <div class="card"><h3>Student Dashboard</h3><p>Marks system</p><button class="btn">Live</button><button class="btn2">Code</button></div>
+
+  </div>
 </section>
+<!--RESUME-->
+<section id="resume" class="section">
+    <h2>My Resume</h2>
+    <p> You can Download my resume below:</p>
+    <ahref="resume.pdf" download>
+        <button class="btn">Download Resume</button>
+    </a>
+</section>
+<footer>
+  <p>© 2026 Karuna Karn | All Rights Reserved</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

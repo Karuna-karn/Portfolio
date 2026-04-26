@@ -1,92 +1,102 @@
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+/* Progress Bar */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: crimson;
+  width: 0%;
 }
 
 /* NAVBAR */
-header {
-    background: #111;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
 nav {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo {
-    color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #111;
+  color: white;
 }
 
 nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+  display: flex;
+  gap: 15px;
+  list-style: none;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 /* HERO */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
+  text-align: center;
+  padding: 80px;
+  background: linear-gradient(45deg,#667eea,#764ba2);
+  color: white;
 }
 
-.hero h1 span {
-    color: #ff6347;
+/* SECTION */
+.section {
+  padding: 50px;
+  text-align: center;
 }
 
-.btn {
-    padding: 10px 20px;
-    background: #ff6347;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* SECTIONS */
-section {
-    width: 85%;
-    margin: 60px auto;
-}
-
-/* ABOUT */
-.about p {
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-.skills li {
-    margin: 5px 0;
+.skills div {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 /* PROJECTS */
-.project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-/* CONTACT */
-.contact p {
-    font-size: 18px;
-    margin: 10px 0;
+.card {
+  width: 250px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* BUTTON */
+.btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn2 {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
 }
