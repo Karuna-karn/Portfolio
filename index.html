@@ -11,21 +11,27 @@
 
 <body>
 
+<!-- NAV -->
 <nav>
   <div class="logo">Karuna Karn</div>
   <div class="links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Karuna Karn</h1>
-  <h2 class="typing">MERN Stack Developer</h2>
-  <p>Frontend Strong | Backend Capable | React & Node Developer</p>
+  <h1 class="animated">Hi, I'm Karuna Karn 👩‍💻</h1>
+
+  <h2 class="typing">Frontend Developer | MERN Stack Learner</h2>
+
+  <p>
+    Building responsive, interactive & real-world web applications.
+  </p>
 
   <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
     View Projects
@@ -37,22 +43,15 @@
   <h2>About Me</h2>
 
   <p>
-    I am <b>Karuna Karn</b>, a passionate and self-motivated <b>MERN Stack Developer</b> with strong expertise in frontend development and growing experience in backend technologies.
-    I have completed my <b>BCA from R.K. College, L.N. Mithila University (LNMU)</b>.
+    I am a passionate Frontend Developer with strong skills in HTML, CSS, JavaScript and growing expertise in React and backend development.
   </p>
 
-  <br>
-
   <p>
-    I specialize in building responsive, user-friendly, and interactive web applications using HTML, CSS, JavaScript, and React.
-    I also work with Node.js, Express.js, SQL, and MongoDB to build full-stack applications.
+    I have completed BCA from R.K College (LNMU) with an academic performance of <b>~8.0 CGPA (till 5th semester average)</b>.
   </p>
 
-  <br>
-
   <p>
-    I enjoy converting ideas into real-world working projects. My focus is always on clean UI, smooth user experience, and efficient functionality.
-    I am continuously improving my backend skills and aiming to become a professional Full Stack Developer.
+    I enjoy building real-world projects that solve practical problems and improve user experience.
   </p>
 </section>
 
@@ -61,20 +60,15 @@
   <h2>Skills</h2>
 
   <div class="skills-grid">
-
     <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
     <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
     <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
     <div class="skill"><i class="fa-brands fa-react"></i><span>React</span></div>
-
     <div class="skill"><i class="fa-brands fa-node"></i><span>Node.js</span></div>
-    <div class="skill"><i class="fa-solid fa-server"></i><span>Express.js</span></div>
-    <div class="skill"><i class="fa-solid fa-database"></i><span>SQL</span></div>
-    <div class="skill"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
-
+    <div class="skill"><i class="fa-solid fa-server"></i><span>Express</span></div>
+    <div class="skill"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
     <div class="skill"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
     <div class="skill"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
-
   </div>
 </section>
 
@@ -85,22 +79,24 @@
   <div class="projects">
 
     <div class="card">
+      <h3>Career Compass</h3>
+      <p>Placement readiness analyzer with score + recommendations.</p>
+      <button onclick="openLink('https://karuna-karn.github.io/Career-Compass/')">Live</button>
+    </div>
+
+    <div class="card">
+      <h3>Roommate Expense Splitter</h3>
+      <p>Smart bill splitting app for roommates.</p>
+      <button onclick="openLink('https://karuna-karn.github.io/Roommate-expense-splitter/')">Live</button>
+    </div>
+
+    <div class="card">
       <h3>Smart Room Designer</h3>
-      <p>
-        A web-based interactive room design tool that allows users to create and visualize room layouts with a simple and intuitive interface.
-      </p>
-      <button onclick="openLink('https://karuna-karn.github.io/Smart-Room-Designer/')">Open Project</button>
+      <p>Drag & drop room layout designer tool.</p>
+      <button onclick="openLink('https://karuna-karn.github.io/Smart-Room-Designer/')">Live</button>
     </div>
 
-    <div class="card">
-      <h3>AI Interview Simulator</h3>
-      <p>
-        A smart interview practice platform that simulates real interview environments and helps users improve confidence and communication skills.
-      </p>
-      <button onclick="openLink('https://karuna-karn.github.io/ai-interview-simulator/')">Open Project</button>
-    </div>
-
-    <div class="card">
+     <div class="card">
       <h3>Color Palette Generator</h3>
       <p>
         A creative tool that generates modern UI color combinations for designers and developers to build attractive interfaces.
@@ -108,7 +104,15 @@
       <button onclick="openLink('https://karuna-karn.github.io/color-palette-generator/')">Open Project</button>
     </div>
 
-    <div class="card">
+     <div class="card">
+      <h3>AI Interview Simulator</h3>
+      <p>
+        A smart interview practice platform that simulates real interview environments and helps users improve confidence and communication skills.
+      </p>
+      <button onclick="openLink('https://karuna-karn.github.io/ai-interview-simulator/')">Open Project</button>
+    </div>
+
+     <div class="card">
       <h3>Password Generator</h3>
       <p>
         A secure password generator tool that creates strong and customizable passwords for better online security.
@@ -116,36 +120,44 @@
       <button onclick="openLink('https://karuna-karn.github.io/password-generator/')">Open Project</button>
     </div>
 
-     <div class="card">
-      <h3>Career-Compass</h3>
-      <p>
-        A frontend career assessment application that analyzes placement readiness and provides personalized recommendations.
-      </p>
-      <button onclick="openLink('https: https://karuna-karn.github.io/Career-Compass/')">Open Project</button>
-    </div>
 
-     <div class="card">
-      <h3>Roomate Expense splitter</h3>
-      <p>
-        A web application to split and manage expenses between roommates.
-      </p>
-      <button onclick="openLink('https:https://karuna-karn.github.io/Roommate-expense-splitter/')">Open Project</button>
-    </div>
+
+
+
+
+
+
+
+
 
   </div>
+</section>
+
+<!-- RESUME (IMPACTFUL SECTION) -->
+<section id="resume" class="card-section">
+  <h2>Resume</h2>
+
+  <p>
+    Download my latest resume to know more about my skills, projects and experience.
+  </p>
+
+  <a href="Karuna-Karnresume.pdf" download>
+    <button>Download Resume</button>
+  </a>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="card-section">
   <h2>Contact</h2>
 
-  <p>Email: <b>karnkaruna28@gmail.com</b></p>
-  <p>Phone: <b>7488169503</b></p>
-  <p>GitHub: Karuna-karn</p>
+  <p>Email: karnkaruna28@gmail.com</p>
+  <p>Phone: +91-7488169503</p>
 
-  <a href="resume.pdf" download>
-    <button>Download Resume</button>
-  </a>
+  <p>
+    GitHub:
+    <a href="https://github.com/Karuna-Karn" target="_blank">Profile</a>
+  </p>
+
 </section>
 
 <footer>
