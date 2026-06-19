@@ -50,10 +50,10 @@ section {
 }
 
 .card {
-  background: white;
+  background: rgb(200, 201, 198);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(190, 182, 182, 0.1);
 }
 
 /* SKILLS */
@@ -64,7 +64,7 @@ section {
 }
 
 .skill {
-  background: white;
+  background: rgb(200, 201, 198);
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -87,3 +87,17 @@ footer {
   background: #111;
   color: white;
 }
+
+body.dark {
+  background-color: #111;
+  color: white;
+}
+
+body.dark nav {
+  background-color: #222;
+}
+body.dark .project-card {
+  background-color: #1e1e1e;
+  color: white;
+}
+
